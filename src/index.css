@@ -1,0 +1,23 @@
+@font-face {
+  font-family: 'KyivTypeTitling';
+  src: url('./assets/fonts/kyivtypetitling/TTF/KyivTypeTitling-Heavy3.ttf');
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #fff;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
