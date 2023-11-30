@@ -19,6 +19,7 @@ export const Services = () => {
         text4: '',
         text5: '',
         text6: '',
+        text7: '',
         image: '',
         showModal: false,
     });
@@ -38,6 +39,7 @@ export const Services = () => {
             modal_text4,
             modal_text5,
             modal_text6,
+            modal_text7,
             image,
         } = item;
 
@@ -52,6 +54,7 @@ export const Services = () => {
             text4: modal_text4,
             text5: modal_text5,
             text6: modal_text6,
+            text7: modal_text7,
             modalImage: image,
             showModal: true,
         });
@@ -87,12 +90,12 @@ export const Services = () => {
 
                 <div id="modal" className={cn('service-modal', { 'active': isModalActive })}>
                     <div className="modal-content">
-                        {services.map((image, index) => (
+                        {services.map(image => (
                             <img
                                 key={image.id}
                                 src={image.image}
                                 alt="modal-image"
-                                id={`modalImage${index}`}
+                                id="modalImage"
                             />
                         ))}
                         <img src={CloseButton}
@@ -110,7 +113,7 @@ export const Services = () => {
                             <div id="modalText4">{modalData.text4}</div>
                             <div id="modalText5">{modalData.text5}</div>
                             <div id="modalText6">{modalData.text6}</div>
-                            <div id="modalText7"></div>
+                            <div id="modalText7">{modalData.text7}</div>
                         </div>
                     </div>
                 </div>

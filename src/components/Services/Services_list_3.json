@@ -13,7 +13,7 @@
         "modal_text4": "",
         "modal_text5": "",
         "modal_text6": "",
-        "image": "../../assets/images/services/7-people-min.jpg",
+        "image": "./src/assets/images/services/7-people-min.jpg",
         "id": "7"
         
     },
@@ -32,7 +32,7 @@
         "modal_text4": "",
         "modal_text5": "",
         "modal_text6": "",
-        "image": "../../assets/images/services/8-clothes-min.jpg",
+        "image": "./src/assets/images/services/8-clothes-min.jpg",
         "id": "8"
     },
 
@@ -50,7 +50,7 @@
         "modal_text4": "",
         "modal_text5": "",
         "modal_text6": "",
-        "image": "../../assets/images/services/9-media-min.jpg",
+        "image": "./src/assets/images/services/9-media-min.jpg",
         "id": "9"
     }
 ]

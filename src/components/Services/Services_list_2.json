@@ -13,7 +13,7 @@
         "modal_text4": "✓ Сімейні групи, які об`єднують сім`ї навколо вивчення Слова Божого та різноманітних сімейних курсів.",
         "modal_text5": "",
         "modal_text6": "",
-        "image": "../../assets/images/services/4-family-min.jpg",
+        "image": "./src/assets/images/services/4-family-min.jpg",
         "id": "4"
         
     },
@@ -32,7 +32,7 @@
         "modal_text4": "Дитячий, Підлітковий, Молодіжний, Чоловічий, Основний.",
         "modal_text5": "Також, у нас є молодіжна група прославлення, яка веде нас в поклонінні Богу.",
         "modal_text6": "",
-        "image": "../../assets/images/services/5-music-min.jpg",
+        "image": "./src/assets/images/services/5-music-min.jpg",
         "id": "5"
     },
 
@@ -50,7 +50,7 @@
         "modal_text4": "А також функціонують різні малі молитовні групи.",
         "modal_text5": "",
         "modal_text6": "",
-        "image": "../../assets/images/services/6-prayer-min.jpg",
+        "image": "./src/assets/images/services/6-prayer-min.jpg",
         "id": "6"
     }
 ]

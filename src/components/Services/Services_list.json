@@ -12,8 +12,9 @@
         "modal_text3": "Мета недільної школи:",
         "modal_text4": "✓ запалити Божий вогонь в дитячих серцях;",
         "modal_text5": "✓ навчити дітей любити Бога і один одного;",
-        "modal_text6": "✓ виховати майбутнє покоління на основі християнських цінностей! Проходить кожної неділі о 10:00.",
-        "image": "../../assets/images/services/1-kids-min.jpg",
+        "modal_text6": "✓ виховати майбутнє покоління на основі християнських цінностей!",
+        "modal_text7": "✓ Проходить кожної неділі о 10:00.",
+        "image": "./src/assets/images/services/1-kids-min.jpg",
         "id": "1"
     },
 
@@ -31,7 +32,7 @@
         "modal_text4": "",
         "modal_text5": "",
         "modal_text6": "",
-        "image": "../../assets/images/services/2-pidlitok-min.jpg",
+        "image": "./src/assets/images/services/2-pidlitok-min.jpg",
         "id": "2"
         
     },
@@ -50,7 +51,7 @@
         "modal_text4": "Понеділок 18:00 (група Вечірня варта) @vechirnya_varta",
         "modal_text5": "Субота 15:00 (група Vector) @vector_group",
         "modal_text6": "Більше інформації можете дізнатися на сторінці інстаграм @status_3.16.",
-        "image": "../../assets/images/services/3-youth-min.jpg",
+        "image": "./src/assets/images/services/3-youth-min.jpg",
         "id": "3"
     }
 ]
