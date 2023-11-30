@@ -1,4 +1,5 @@
 import './About_us.css';
+import './slider.js';
 import Image1 from '../../assets/images/image--1.jpg';
 import Image2 from '../../assets/images/image--2.jpg';
 import Image3 from '../../assets/images/image--3.jpg';
