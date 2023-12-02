@@ -1,0 +1,978 @@
+.donate {
+    margin-top: 98px;
+}
+
+.donate-container {
+    max-height: 580px;
+    border-radius: 50px;
+    border: 5px solid #202020;
+    box-shadow: 6px 4px 16px 0px rgba(0, 0, 0, 0.25);
+    margin: 0 auto;
+    transition: max-height 0.3s ease-in-out;
+}
+
+.donate-container.active {
+    max-height: 980px;
+}
+
+.donate-wrapper {
+    display: flex;
+}
+
+.donate__text-wrapper {
+    margin-left: 47px;
+}
+
+
+.donate__first-part {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.donate__first-part.active {
+    margin-top: 0;
+}
+
+.donate__title {
+    font-family: 'KyivTypeTitling';
+    font-size: 50px;
+    font-weight: 840;
+    color: #202020;
+    margin: 70px 25px 20px 0;
+}
+
+.donate__description {
+    max-width: 90%;
+    font-size: 20px;
+    font-weight: 400;
+    color: #202020;
+    margin: 10px 0 10px 0;
+}
+
+.donate__description--info {
+    padding-top: 20px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #202020;
+}
+
+.donate__buttons {
+    display: flex;
+    margin: 10px 90px 10px 0;
+}
+
+.donate__paypal,
+.donate__moneygram,
+.donate__western-union {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 14px;
+    border: 2px solid #202020;
+    cursor: pointer;
+    height: 74px;
+    transition: 0.1s ease-in-out;
+}
+
+.donate__paypal:hover,
+.donate__moneygram:hover,
+.donate__western-union:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.donate__paypal.active,
+.donate__moneygram.active,
+.donate__western-union.active {
+    background-color: #202020;
+}
+
+.donate__paypal-img {
+    margin-top: 17px;
+}
+
+.donate__paypal-link,
+.donate__moneygram-link,
+.donate__western-union-link {
+    width: 116px;
+    height: 54px;
+    text-decoration: none;
+    color: #202020;
+    text-align: center;
+}
+
+.donate__paypal-img,
+.donate__moneygram-img,
+.donate__western-union-img {
+    margin-top: 8px;
+}
+
+.donate__moneygram,
+.donate__western-union {
+    margin-left: 26px;
+}
+
+.donate__button-text {
+    font-size: 13px;
+    font-weight: 600;
+    color: #202020;
+    margin: 0 0 8px 0;
+    text-align: center;
+}
+
+.donate__requisites {
+    display: flex;
+    margin: 25px 90px 90px 0;
+}
+
+.donate__requisite {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 116px;
+    height: 74px;
+    font-size: 35px;
+    font-weight: 600;
+    border-radius: 14px;
+    border: 2px solid #202020;
+    cursor: pointer;
+    color: #202020;
+    text-decoration: none;
+    transition: 0.1s ease-in-out;
+}
+
+.donate__requisite:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.donate__requisite.active {
+    background-color: #202020;
+    color: #fff;
+}
+
+.donate__requisites-usd {
+    margin-left: 25px;
+}
+
+.donate__requisites-eur {
+    margin-left: 25px;
+}
+
+.modal__requisites-border {
+    width: 670px;
+    height: 1px;
+    background-color: #E0E0E0;
+    margin-bottom: 33px;
+}
+
+.requisites-modal {
+    max-height: 0;
+    opacity: 0;
+    visibility: hidden;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: opacity 0.3s;
+}
+
+.requisites-modal.active {
+    max-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 57px;
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal__requisites-title,
+.modal__requisites-title2 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.modal__requisites-title3 {}
+
+.modal__requisites-name {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.modal__requisites {
+    margin-top: 15px;
+}
+
+.modal__requisites-email,
+.modal__requisites-number,
+.modal__requisites-organization,
+.modal__requisites-edrpu,
+.modal__requisites-bank,
+.modal__requisites-iban,
+.modal__requisites-disclaimer {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.modal__requisites-edrpu,
+.modal__requisites-iban {
+    margin-bottom: 20px;
+}
+
+/* #endregion */
+.donate__border {
+    width: 525px;
+    height: 10px;
+    background: #202020;
+    margin: 55px 30px 0 15px;
+    display: none;
+}
+
+/* #region second-part */
+.donate__second-part {
+    width: 513px;
+    height: 406px;
+    border-radius: 50px;
+    background: #F5F5F5;
+    box-shadow: 3px 7px 19px 0px rgba(0, 0, 0, 0.25);
+    margin: 92px 25px 0 0;
+}
+
+.donate__field-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 613px;
+    margin-top: 30px;
+}
+
+.donate__form {
+    margin: 80px 0 0 45px;
+}
+
+.donate__currency-dropdown {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.donate__currency-choosed {
+    font-size: 50px;
+    font-style: italic;
+    font-weight: 600;
+    transition: transform 0.3s ease;
+}
+
+.donate__currency-choose {
+    display: flex;
+    position: absolute;
+    margin: 26px 0 0 30px;
+}
+
+.donate__currency-list {
+    display: block;
+    max-height: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 100%;
+    left: -8px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: #F5F5F5;
+    transform-origin: top;
+    opacity: 0;
+    pointer-events: none;
+    transition: max-height 0.3s ease, opacity 0.2s ease;
+}
+
+.donate__currency-item {
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 50px;
+    font-style: italic;
+    font-weight: 600;
+}
+
+.donate__currency-dropdown.active .donate__currency-list {
+    display: block;
+    max-height: 300px;
+    opacity: 1;
+    pointer-events: auto;
+    margin: 10px 0 0 0;
+    border-radius: 10px;
+}
+
+.donate__currency-arrow {
+    margin: -40px 0 0 60px;
+    cursor: pointer;
+}
+
+.donate__field {
+    width: 59%;
+    max-height: 90px;
+    font-size: 80px;
+    font-weight: 800;
+    font-style: italic;
+    outline: none;
+    border: none;
+    background: #F5F5F5;
+    padding: 12px 0 0 140px;
+    overflow: hidden;
+    margin: 0;
+}
+
+.donate__field-border {
+    border: 0.5px solid #000;
+    width: 85%;
+    margin-left: 30px;
+}
+
+.donate__fix-buttons {
+    display: flex;
+    width: 100%;
+    margin: 36px auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.donate__fix-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 40px;
+    border-radius: 50px;
+    border: 1px solid #202020;
+    font-size: 20px;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+.donate__fix-button-500 {
+    margin-left: 26px;
+}
+
+.donate__fix-button-1000 {
+    margin-left: 26px;
+}
+
+.donate__pay-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 377px;
+    height: 60px;
+    border: 2px solid;
+    border-radius: 15px;
+    background: #202020;
+    margin: 30px 30px 0 30px;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.donate__pay-button:hover {
+    background: #303030;
+}
+
+.donate__pay-link {
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+    text-decoration: none;
+}
+
+.mobile__payment {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.apple-pay {
+    margin-right: 20px;
+}
+
+.apple-pay,
+.google-pay {
+    pointer-events: none;
+}
+
+@media (max-width: 980px) {
+    .donate {
+        position: relative;
+    }
+
+    .donate-container {
+        max-height: 1150px;
+        margin: 0 40px;
+        border: 3px solid #202020;
+    }
+
+    .donate-container.active {
+        max-height: none;
+    }
+
+    .donate-wrapper {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .donate__first-part {
+        padding: 0 10px;
+        box-sizing: border-box;
+    }
+
+    .donate__title {
+        font-size: 40px;
+        font-weight: 840;
+        padding: 10px 330px 20px 0;
+    }
+
+    .donate__description {
+        font-size: 18px;
+        font-weight: 400;
+        margin: 0;
+    }
+
+    .donate__buttons,
+    .donate__requisites {
+        margin: 25px 0 40px 0;
+    }
+
+    .donate__border {
+        display: flex;
+        max-width: 511px;
+        height: 1px;
+        margin: 0 0 40px 0;
+    }
+
+    .donate__second-part {
+        width: 90%;
+        height: 490px;
+        margin: 0 0 75px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .donate__field-body {
+        margin: 0;
+    }
+
+    .donate__field-border {
+        max-width: 100%;
+        margin-left: 45px;
+    }
+
+    .donate__currency-choose {
+        margin: 26px 0 0 60px;
+    }
+
+    .donate__field {
+        width: 60%;
+        padding: 12px 0 0 225px;
+    }
+
+    .donate__fix-buttons {
+        margin: 36px 0 0 0;
+    }
+
+    .donate__fix-button {
+        width: 130px;
+        height: 55px;
+        font-size: 20px;
+        font-weight: 300;
+    }
+
+    .donate__pay-button {
+        height: 60px;
+        margin: 25px auto;
+    }
+
+    .requisites-modal {
+        opacity: 0;
+        visibility: hidden;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 57px;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        transition: opacity 0.3s;
+    }
+
+    .requisites-modal.active {
+        display: flex;
+        opacity: 1;
+        visibility: visible;
+
+    }
+}
+
+@media (max-width: 740px) {
+    .donate {
+        margin-top: 50px;
+    }
+
+    .donate-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-height: 640px;
+        max-width: 381px;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+
+    .donate-container.active {
+        max-height: none;
+    }
+
+    .donate__text-wrapper {
+        max-width: 340px;
+    }
+
+    .donate-wrapper {
+        /* flex-direction: column; */
+    }
+
+    .donate__first-part {
+        padding: 0 10px;
+        margin-top: 80px;
+        box-sizing: border-box;
+    }
+
+    .donate__title {
+        font-size: 20px;
+        font-weight: 840;
+        padding: 10px 330px 0 0;
+        margin: 20px 0 0 0;
+    }
+
+    .donate__description {
+        font-size: 13px;
+        font-weight: 400;
+    }
+
+    .donate__buttons,
+    .donate__requisites {
+        margin: 25px 0 10px 0;
+    }
+
+    .donate__paypal,
+    .donate__moneygram,
+    .donate__western-union,
+    .donate__paypal-link,
+    .donate__moneygram-link,
+    .donate__western-union-link {
+        width: 88px;
+        height: 52px;
+    }
+
+    .donate__button-text {
+        font-size: 10px;
+        margin-bottom: 15px;
+    }
+
+    .donate__button-text-western {
+        margin-bottom: 2px;
+    }
+
+    .donate__paypal-img,
+    .donate__moneygram-img,
+    .donate__western-union-img {
+        width: 50%;
+        height: 50%;
+    }
+
+    .donate__paypal-img {
+        margin-top: 17px;
+    }
+
+    .donate__western-union-img {
+        margin-top: 5px;
+    }
+
+    .donate__moneygram-img {
+        margin-top: 15px;
+    }
+
+    .donate__requisite {
+        width: 88px;
+        height: 52px;
+        font-weight: 600;
+    }
+
+    .donate__border {
+        display: flex;
+        max-width: 242px;
+        height: 1px;
+        margin: 20px 0 40px 0;
+    }
+
+    .donate__second-part {
+        max-width: 342px;
+        max-height: 260px;
+        margin: 0 0 75px 0;
+    }
+
+    .donate__field-body {
+        margin: 0;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .donate__field-border {
+        width: 80%;
+        margin: 0 0 0 35px;
+    }
+
+    .donate__currency-list {
+        top: 25px;
+    }
+
+    .donate__currency-choose {
+        margin: 18px 0 0 35px;
+        width: 20%;
+
+    }
+
+    .donate__currency-choosed {
+        font-size: 30px;
+    }
+
+    .donate__currency-arrow {
+        width: 20px;
+        height: 20px;
+    }
+
+    .donate__currency-item {
+        font-size: 30px;
+    }
+
+    .donate__currency-arrow-img {
+        margin: 12px 0 0 -25px;
+    }
+
+    #checkout {
+        margin-top: 20px;
+    }
+
+    .donate__field {
+        width: 44%;
+        padding: 12px 0 0 110px;
+        font-size: 40px;
+        margin: 0 0 0 20px;
+    }
+
+    .donate__fix-buttons {
+        margin: 36px 0 0 0;
+    }
+
+    .donate__fix-button {
+        width: 66px;
+        height: 27px;
+        font-size: 13px;
+        font-weight: 300;
+    }
+
+    .donate__pay-button {
+        width: 156px;
+        height: 39px;
+        border-radius: 9px;
+        margin: 15px auto;
+    }
+
+    .mobile__payment {
+        margin: 0 0 70px 0;
+    }
+
+    .donate__pay-link {
+        font-size: 12px;
+    }
+
+    .requisites-modal {
+        opacity: 0;
+        visibility: hidden;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 57px;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        transition: opacity 0.3s;
+    }
+
+    .requisites-modal.active {
+        display: flex;
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .modal__requisites-border {
+        max-width: 300px;
+    }
+
+    .modal__requisites-name,
+    .modal__requisites-text,
+    .modal__requisites-email,
+    .modal__requisites-number,
+    .modal__requisites-organization,
+    .modal__requisites-edrpu,
+    .modal__requisites-bank,
+    .modal__requisites-iban,
+    .modal__requisites-disclaimer {
+        font-size: 13px;
+    }
+
+    .modal__requisites-disclaimer {
+        text-align: center;
+    }
+}
+
+@media (max-width: 500px) {
+    .donate {
+        margin-top: 50px;
+    }
+
+    .donate-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-height: 640px;
+        max-width: 290px;
+        margin: 0 10px;
+        padding: 0 35px;
+        border-radius: 30px;
+    }
+
+    .donate-container.active {
+        max-height: none;
+    }
+
+    .donate__text-wrapper {
+        max-width: 310px;
+        margin-top: 20px;
+        margin-left: 10px;
+    }
+
+    .donate-wrapper {
+        width: 100%;
+    }
+
+    .donate__first-part {
+        padding: 0;
+        margin: 0;
+        margin-top: 80px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .donate__title {
+        font-size: 20px;
+        font-weight: 840;
+        padding: 10px 165px 0 0;
+        margin: 20px 0 5px 0;
+    }
+
+    .donate__description {
+        font-size: 13px;
+        font-weight: 400;
+    }
+
+    .donate__buttons,
+    .donate__requisites {
+        margin: 25px 0 10px 0;
+    }
+
+    .donate__paypal,
+    .donate__moneygram,
+    .donate__western-union,
+    .donate__paypal-link,
+    .donate__moneygram-link,
+    .donate__western-union-link {
+        width: 78px;
+        height: 52px;
+    }
+
+    .donate__button-text {
+        font-size: 10px;
+        margin-bottom: 15px;
+    }
+
+    .donate__button-text-western {
+        margin-bottom: 2px;
+        font-size: 9px;
+    }
+
+    .donate__paypal-img,
+    .donate__moneygram-img,
+    .donate__western-union-img {
+        width: 50%;
+        height: 50%;
+    }
+
+    .donate__paypal-img {
+        margin-top: 17px;
+    }
+
+    .donate__western-union-img {
+        margin-top: 5px;
+    }
+
+    .donate__moneygram-img {
+        margin-top: 15px;
+    }
+
+    .donate__requisite {
+        width: 78px;
+        height: 52px;
+        font-weight: 600;
+        font-size: 30px;
+    }
+
+    .donate__border {
+        display: flex;
+        max-width: 242px;
+        height: 1px;
+        margin: 20px 0 40px 0;
+    }
+
+    .donate__second-part {
+        width: 100%;
+        max-height: 249px;
+        margin: 0 0 75px 0;
+        border-radius: 30px;
+    }
+
+    .donate__field-body {
+        margin: 40px 0 0 0;
+        width: 100%;
+    }
+
+    .donate__currency-list {
+        top: 25px;
+    }
+
+    .donate__currency-choose {
+        margin: 18px 0 0 35px;
+        width: 20%;
+
+    }
+
+    .donate__currency-choosed {
+        font-size: 30px;
+    }
+
+    .donate__currency-arrow {
+        width: 20px;
+        height: 20px;
+    }
+
+    .donate__currency-item {
+        font-size: 30px;
+    }
+
+    .donate__currency-arrow-img {
+        margin: 12px 0 0 -25px;
+    }
+
+    .donate__form {
+        margin: 50px 0 0 30px;
+    }
+
+    .donate__field {
+        width: 44%;
+        padding: 12px 0 0 90px;
+        font-size: 40px;
+    }
+
+    .donate__field-border {
+        margin: 0 0 0 30px;
+    }
+
+    .donate__fix-buttons {
+        margin: 36px 0 0 0;
+    }
+
+    .donate__fix-button {
+        width: 70px;
+        height: 27px;
+        font-size: 13px;
+        font-weight: 300;
+    }
+
+    .donate__fix-button-500,
+    .donate__fix-button-1000 {
+        margin-left: 15px;
+    }
+
+    .donate__pay-button {
+        width: 156px;
+        height: 39px;
+        border-radius: 9px;
+        margin: 20px auto 20px auto;
+    }
+
+    .donate__pay-link {
+        font-size: 12px;
+    }
+
+    .requisites-modal {
+        opacity: 0;
+        visibility: hidden;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 57px;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        transition: opacity 0.3s;
+    }
+
+    .requisites-modal.active {
+        display: flex;
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .modal__requisites-border {
+        max-width: 300px;
+    }
+
+    .modal__requisites-name,
+    .modal__requisites-text,
+    .modal__requisites-email,
+    .modal__requisites-number,
+    .modal__requisites-organization,
+    .modal__requisites-edrpu,
+    .modal__requisites-bank,
+    .modal__requisites-iban,
+    .modal__requisites-disclaimer {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 440px) {
+    #modal__requisites-data {
+        text-align: center;
+    }
+}

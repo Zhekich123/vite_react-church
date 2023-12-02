@@ -185,7 +185,7 @@
         max-width: 380px;
         max-height: 201px;
         border-radius: 25px;
-        background-image: url('./images/schedule-background-small.svg');
+        background-image: url('../../assets/images/schedule-background-small.svg');
     }
 
     .schedule__title {
@@ -218,7 +218,6 @@
         max-width: 380px;
         max-height: 201px;
         border-radius: 25px;
-        background-image: url('./images/schedule-background-small.svg');
     }
 
     .schedule__title {
@@ -251,7 +250,6 @@
         max-width: 350px;
         max-height: 171px;
         border-radius: 25px;
-        background-image: url('./images/schedule-background-small.svg');
     }
 
     .schedule__title {

@@ -6,6 +6,13 @@ import services2 from './Services_list_2.json';
 import services3 from './Services_list_3.json';
 import './Services.css';
 
+const allServices = [...services, ...services2, ...services3];
+
+function getImageById(id) {
+    const service = allServices.find(image => image.id === id);
+    return service ? service.image : null;
+}
+
 export const Services = () => {
     const [isModalActive, setIsModalActive] = useState(false);
     const [modalData, setModalData] = useState({
@@ -21,13 +28,13 @@ export const Services = () => {
         text6: '',
         text7: '',
         image: '',
+        id: '',
         showModal: false,
     });
 
     const openModal = (item, e) => {
         e.preventDefault();
-        console.log("Modal opened", item);
-
+        
         const {
             title,
             description_title,
@@ -41,6 +48,7 @@ export const Services = () => {
             modal_text6,
             modal_text7,
             image,
+            id,
         } = item;
 
         setModalData({
@@ -56,6 +64,7 @@ export const Services = () => {
             text6: modal_text6,
             text7: modal_text7,
             modalImage: image,
+            id: id,
             showModal: true,
         });
 
@@ -90,14 +99,12 @@ export const Services = () => {
 
                 <div id="modal" className={cn('service-modal', { 'active': isModalActive })}>
                     <div className="modal-content">
-                        {services.map(image => (
-                            <img
-                                key={image.id}
-                                src={image.image}
-                                alt="modal-image"
-                                id="modalImage"
-                            />
-                        ))}
+                        <img
+                            key={modalData.id}
+                            src={getImageById(modalData.id)}
+                            alt="modal-image"
+                            id="modalImage"
+                        />
                         <img src={CloseButton}
                             className="modal-close-btn"
                             alt="close"
