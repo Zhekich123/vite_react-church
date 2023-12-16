@@ -1,5 +1,40 @@
 [
     {
-        
+        "class": "donate__requisite donate__requisites-uah",
+        "href": "#donate__pay-button",
+        "title": "Реквізити в UAH:",
+        "organization": "Релігійна організація: 'РГ ПЕРША ОДЕСЬКА ЦЕРКВА ЄХБ'",
+        "edrpu": "ЄДРПОУ: 13891816",
+        "bank": "Назва Банку: 'ПЕРШИЙ ІНВЕСТИЦІЙНИЙ БАНК' (м.Київ)",
+        "iban": "IBAN: UA 55 300506 0000026002901047182",
+        "disclaimer": "Увага!!! Призначення платежа: ДОБРОВIЛЬНI ПОЖЕРТВУВАННЯ!",
+        "currency": "UAH",
+        "id": "1"
+    },
+
+    {
+        "class": "donate__requisite donate__requisites-usd",
+        "href": "#donate__pay-button",
+        "title": "Реквізити в USD:",
+        "organization": "Релігійна організація: 'РГ ПЕРША ОДЕСЬКА ЦЕРКВА ЄХБ'",
+        "edrpu": "ЄДРПОУ: 13891816",
+        "bank": "Назва Банку: 'ПЕРШИЙ ІНВЕСТИЦІЙНИЙ БАНК' (м.Київ)",
+        "iban": "IBAN: UA 23 300506 0000026009001047182",
+        "disclaimer": "Увага!!! Призначення платежа: ДОБРОВIЛЬНI ПОЖЕРТВУВАННЯ!",
+        "currency": "USD",
+        "id": "2"
+    },
+
+    {
+        "class": "donate__requisite donate__requisites-eur",
+        "href": "#donate__pay-button",
+        "title": "Реквізити в EUR:",
+        "organization": "Релігійна організація: 'РГ ПЕРША ОДЕСЬКА ЦЕРКВА ЄХБ'",
+        "edrpu": "ЄДРПОУ: 13891816",
+        "bank": "Назва Банку: 'ПЕРШИЙ ІНВЕСТИЦІЙНИЙ БАНК' (м.Київ)",
+        "iban": "IBAN: UA 23 300506 0000026009001047182",
+        "disclaimer": "Увага!!! Призначення платежа: ДОБРОВIЛЬНI ПОЖЕРТВУВАННЯ!",
+        "currency": "EUR",
+        "id": "3"
     }
 ]

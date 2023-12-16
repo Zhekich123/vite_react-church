@@ -4,19 +4,68 @@
 
 .donate-container {
     max-height: 580px;
-    border-radius: 50px;
-    border: 5px solid #202020;
-    box-shadow: 6px 4px 16px 0px rgba(0, 0, 0, 0.25);
-    margin: 0 auto;
-    transition: max-height 0.3s ease-in-out;
 }
 
 .donate-container.active {
     max-height: 980px;
 }
 
+.payment-methods {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.payment_online {
+    border: 1px solid #000;
+    border-radius: 20px 0px 0px 20px;
+    width: 377px;
+    height: 76px;
+    color: #202020;
+    text-align: center;
+    font-family: 'Montserrat';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.payment_onffline {
+    border: 1px solid #000;
+    border-radius: 0 20px 20px 0;
+    width: 377px;
+    height: 76px;
+    color: #202020;
+    text-align: center;
+    font-family: 'Montserrat';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.payment_online:focus,
+.payment_onffline:focus {
+    background-color: #202020;
+    color: #fff;
+    font-weight: 600;
+}
+
+
 .donate-wrapper {
     display: flex;
+    border-radius: 50px;
+    border: 5px solid #202020;
+    box-shadow: 6px 4px 16px 0px rgba(0, 0, 0, 0.25);
+    margin: 0 auto;
+    transition: max-height 0.3s ease-in-out;
 }
 
 .donate__text-wrapper {
@@ -408,12 +457,6 @@
         position: relative;
     }
 
-    .donate-container {
-        max-height: 1150px;
-        margin: 0 40px;
-        border: 3px solid #202020;
-    }
-
     .donate-container.active {
         max-height: none;
     }
@@ -422,6 +465,9 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        max-height: 1150px;
+        margin: 0 40px;
+        border: 3px solid #202020;
     }
 
     .donate__first-part {
@@ -529,10 +575,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        max-height: 640px;
         max-width: 381px;
-        margin: 0 auto;
-        padding: 0 15px;
     }
 
     .donate-container.active {
@@ -541,6 +584,9 @@
 
     .donate__text-wrapper {
         max-width: 340px;
+        margin: 0 auto;
+        padding: 0 15px;
+        max-height: 640px;
     }
 
     .donate-wrapper {
@@ -754,11 +800,6 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        max-height: 640px;
-        max-width: 290px;
-        margin: 0 10px;
-        padding: 0 35px;
-        border-radius: 30px;
     }
 
     .donate-container.active {
@@ -767,8 +808,12 @@
 
     .donate__text-wrapper {
         max-width: 310px;
+        max-height: 640px;
         margin-top: 20px;
         margin-left: 10px;
+        margin: 0 10px;
+        padding: 0 35px;
+        border-radius: 30px;
     }
 
     .donate-wrapper {

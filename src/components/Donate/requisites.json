@@ -1,0 +1,49 @@
+[
+    {
+        "class": "donate__paypal",
+        "data_title": "PayPal Details:",
+        "data_name": "First Baptist Church",
+        "data_email": "firstodessabaptist@gmail.com",
+        "link_class": "donate__paypal-link",
+        "href": "#donate__pay-button",
+        "img_class": "donate__paypal-img",
+        "image": "../../assets/images/paypal-logo.svg",
+        "alt": "paypal",
+        "text_class": "donate__button-text donate__button-text-paypal",
+        "name": "PayPal",
+        "id": "1"
+    },
+
+    {
+        "class": "donate__moneygram",
+        "data_title": "Money Gram Details:",
+        "data_title2": "Перекази прохання надсилати на iм'я:",
+        "data_name": "Myrmyr Ivan (Довірена особа)",
+        "data_email": "Пiсля вiдправки, повiдомте, будь ласка, код переказу, суму та країну переводу на телефон:",
+        "data_number": "+380675573489",
+        "link_class": "donate__moneygram-link",
+        "href": "#donate__pay-button",
+        "img_class": "donate__moneygram-img",
+        "image": "../../assets/images/moneygram-logo.svg",
+        "alt": "moneygram",
+        "text_class": "donate__button-text donate__button-text-moneygram",
+        "name": "Moneygram",
+        "id": "2"
+    },
+
+    {
+        "class": "donate__western-union",
+        "data_title": "Westert Union Details:",
+        "data_title2": "Перекази прохання надсилати на iм'я:",
+        "data_name": "Myrmyr Ivan (Довірена особа)",
+        "data_email": "Пiсля вiдправки, повiдомте, будь ласка, код переказу, суму та країну переводу на телефон:",
+        "link_class": "donate__western-union-link",
+        "href": "#donate__pay-button",
+        "img_class": "donate__western-union-img",
+        "image": "../../assets/images/westernunion-logo.svg",
+        "alt": "western-union",
+        "text_class": "donate__button-text donate__button-text-western",
+        "name": "Western Union",
+        "id": "3"
+    }
+]
